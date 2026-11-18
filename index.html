@@ -135,7 +135,7 @@ button,a{-webkit-tap-highlight-color:transparent}
 .offer .cta2{margin-top:14px}
 @media (max-width:720px){.offer{padding:48px 18px 30px;border-radius:18px}.offer-num{font-size:68px}.offer-cur{font-size:26px}}
 @media (prefers-reduced-motion: reduce){.offer-tag::after{display:none}.offer-save{animation:none}}
-.breathe-logo{animation:breathelogo 9s cubic-bezier(.25,.8,.3,1) infinite;will-change:opacity,filter}
+.breathe-logo{z-index:1;animation:breathelogo 9s cubic-bezier(.25,.8,.3,1) infinite;will-change:opacity,filter}
 @keyframes breathelogo{0%{opacity:.06;filter:brightness(1)}7%{opacity:.22;filter:brightness(1.5)}38%{opacity:.075;filter:brightness(1.05)}100%{opacity:.06;filter:brightness(1)}}
 .zoom{position:relative}
 .zoom::after{content:"";position:absolute;inset:14px;border:1px solid rgba(255,255,255,.6);border-radius:12px;pointer-events:none}
