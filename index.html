@@ -136,6 +136,8 @@ button,a{-webkit-tap-highlight-color:transparent}
 @media (max-width:720px){.offer{padding:48px 18px 30px;border-radius:18px}.offer-num{font-size:68px}.offer-cur{font-size:26px}}
 @media (prefers-reduced-motion: reduce){.offer-tag::after{display:none}.offer-save{animation:none}}
 .stonecol{position:relative}
+.stonecol>*{animation:fadein 1.1s cubic-bezier(.2,.7,.2,1) 2.8s both}
+@keyframes fadein{from{opacity:0}to{opacity:1}}
 .ringlayer{position:absolute;left:0;right:0;top:0;height:620px;z-index:0;pointer-events:none}
 .stonecol .stage3d{z-index:2}
 .breathe-logo{z-index:1;animation:breathelogo 9s cubic-bezier(.25,.8,.3,1) infinite;will-change:opacity,filter}
@@ -293,7 +295,7 @@ h2{animation:h2in linear both;animation-timeline:view();animation-range:entry 5%
 .t-lemora .bf,.t-lemora .sb{background-image:url(assets/label-lemora.png),linear-gradient(180deg,rgba(176,104,40,.5) 0%,rgba(166,94,32,.55) 8.6%,rgba(214,150,80,.75) 9%,rgba(98,46,14,.9) 9.8%,rgba(86,39,10,.92) 55%,rgba(60,25,6,.95) 92.5%,rgba(150,84,30,.66) 94.5%,rgba(120,62,20,.72) 100%)}
 @media (prefers-reduced-motion: reduce){
 html{scroll-behavior:auto}
-.shim,.in,.orbit,.orbit2,.halo,.floaty,.mq,.rv,.px,.turn,.spin,.draw path,.drawv path{animation:none}
+.shim,.in,.stonecol>*,.orbit,.orbit2,.halo,.floaty,.mq,.rv,.px,.turn,.spin,.draw path,.drawv path{animation:none}
 .draw path,.drawv path{stroke-dasharray:none;stroke-dashoffset:0}
 .ripple,.intro{display:none}
 .mote,.beam{display:none}
@@ -391,7 +393,7 @@ h2,.zoom,.zoom img,.prog,.swap,.refl,.wmin,.rule,.trk{animation:none}
 </dl>
 </div>
 
-<div class="in stonecol" style="flex: 0 1 460px; min-width: 300px; display: flex; flex-direction: column; align-items: center; gap: 10px; animation-delay: 2.80s">
+<div class="stonecol" style="flex: 0 1 460px; min-width: 300px; display: flex; flex-direction: column; align-items: center; gap: 10px">
 <div class="ringlayer" aria-hidden="true">
 <div class="halo" aria-hidden="true" style="position: absolute; left: calc(50% - 210px); top: 150px; width: 420px; height: 420px; border-radius: 50%; background: #ecca78; filter: blur(90px)"></div>
 <div class="orbit" aria-hidden="true" style="position: absolute; left: calc(50% - 215px); top: 150px; width: 430px; height: 430px; box-sizing: border-box; border-radius: 50%; border: 1px dashed rgba(236,202,120,0.55)"><div style="position: absolute; left: calc(50% - 4px); top: -4px; width: 8px; height: 8px; border-radius: 50%; background: #fff1c4; box-shadow: 0 0 14px 4px rgba(236,202,120,0.8)"></div></div>
